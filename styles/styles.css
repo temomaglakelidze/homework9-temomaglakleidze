@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Inter:wght@300;400;600;700&display=swap");
 header {
-  max-width: 1300px;
+  max-width: 856px;
   width: 100%;
-  height: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 18px;
+  padding: 0px 18px;
 }
 .logo-img {
   width: 64px;
@@ -29,32 +28,39 @@ header {
   font-weight: 500;
   line-height: normal;
 }
-.name-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: auto;
+.developer-img {
+  max-width: 300px;
+  width: 100%;
+}
+.heading-content {
+  margin: 140px auto 70px;
   max-width: 856px;
   width: 100%;
-  margin-top: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.developer-img {
-  width: 243px;
+.heading-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
 }
-.name-text h1 {
+.heading-name h1 {
   max-width: 506px;
-  width: 87%;
+  width: 88%;
+  height: 105px;
   color: #21243d;
   font-family: Heebo;
   font-size: 44px;
   font-style: normal;
   font-weight: 700;
   line-height: 60px; /* 136.364% */
-  margin-bottom: 40px;
 }
-.name-text p {
+.heading-name p {
   max-width: 497px;
   width: 100%;
+  height: 66px;
   color: #21243d;
   font-family: Heebo;
   font-size: 16px;
@@ -62,9 +68,199 @@ header {
   font-weight: 400;
   line-height: normal;
 }
-
-@media only screen and (max-width: 365px) {
-  .nav-list {
+.heading-name button {
+  width: fit-content;
+  border-radius: 2px;
+  background: #ff6464;
+  color: #fff;
+  font-family: Heebo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.posts-content {
+  width: 100%;
+  background-color: #edf7fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+  padding-bottom: 30px;
+}
+.posts-text {
+  max-width: 856px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.posts-text span {
+  color: #21243d;
+  font-family: Heebo;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 272.727% */
+}
+.posts-text a {
+  width: 208px;
+  height: 20px;
+  flex-shrink: 0;
+  color: #00a8cc;
+  text-align: right;
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.posts-cards {
+  margin: auto;
+  max-width: 856px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  padding: 24px;
+  max-width: 418px;
+  width: 100%;
+  height: 295px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+}
+.card h2 {
+  width: 374px;
+  height: 85px;
+  color: #21243d;
+  font-family: Heebo;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 17px;
+}
+.card h3 {
+  width: 374px;
+  height: 34px;
+  color: #21243d;
+  font-family: Heebo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  margin-bottom: 11px;
+}
+.card p {
+  width: 368px;
+  height: 117px;
+  color: #21243d;
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.works {
+  max-width: 856px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.featured-works {
+  margin-top: 15px;
+  color: #21243d;
+  font-family: Heebo;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px; /* 272.727% */
+}
+.work-card {
+  max-width: 856px;
+  width: 100%;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+.work-card-title h2 {
+  color: #21243d;
+  font-family: Heebo;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.year {
+  color: #fff;
+  font-family: Heebo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px; /* 333.333% */
+  padding: 0px 10px 0px;
+  border-radius: 16px;
+  background: #142850;
+}
+.work-span {
+  width: 374px;
+  height: 34px;
+  flex-shrink: 0;
+  color: #8695a4;
+  font-family: Heebo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 26px;
+}
+.work-card-title p {
+  width: 594px;
+  height: 93px;
+  flex-shrink: 0;
+  color: var(--Dark-Color, #21243d);
+  font-family: Heebo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+footer {
+  margin-top: 83px;
+  padding-top: 51px;
+}
+.social-media {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+.copyright {
+  margin: 26px auto 54px;
+  color: #21243d;
+  text-align: center;
+  font-family: Heebo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (max-width: 856px) {
+  nav {
     display: none;
   }
   .burger-menu {
@@ -73,17 +269,126 @@ header {
   .logo-img {
     width: 48px;
   }
-  .name-content {
+  .heading-content {
+    margin: auto;
     margin-top: 50px;
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+  .heading-name {
+    display: flex;
     align-items: center;
   }
-  .name-text {
+  .heading-name h1 {
+    width: 312px;
+    color: #21243d;
+    text-align: center;
+    font-family: Heebo;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 125% */
+  }
+  .heading-name p {
+    width: 328px;
+    color: #21243d;
+    text-align: center;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 21px 0px 36px;
+  }
+  .posts-content {
+    margin-top: 58px;
+  }
+  .posts-text a {
+    display: none;
+  }
+  .posts-text span {
+    margin: auto;
+  }
+  .posts-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0px 10px;
+  }
+  .card {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card h3 {
+    display: flex;
+    justify-content: center;
+  }
+  .featured-works {
+    margin: auto;
+  }
+
+  .work-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 339px;
+    width: 100%;
+    margin: auto;
+  }
+  .work-card img {
+    width: 339px;
+    height: 230px;
+    border-radius: 6px;
+  }
+  .work-card-title {
+    width: 344px;
+    color: #21243d;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .work-card-title h2 {
+    color: #21243d;
+    font-family: Heebo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 125% */
+  }
+  .year {
+    color: #fff;
+    text-align: center;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 60px; /* 375% */
+  }
+  .work-span {
+    color: #8695a4;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .work-card-title p {
+    width: 344px;
+    color: #21243d;
+    font-family: Heebo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .passive {
+    display: none;
   }
 }
